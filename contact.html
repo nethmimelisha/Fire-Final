@@ -20,6 +20,18 @@
 
     <link rel="shortcut icon" href="/images/logo (2).png">
 
+    <!-- JS -->
+    <script src="js/script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("eNTFY4zHPNRSD0qwU");
+   })();
+   </script>
+   
+
     <!-- FONTS -->
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Barlow:100,200,300,400,400italic,500,700,700italic,900'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Barlow+Condensed:100,200,300,400,400italic,500,700,700italic,900'>
@@ -51,6 +63,9 @@
                                                 <a href="index.html"><span>HOME</span></a>
                                             </li>
                                             <li>
+                                                <a href="/CMC.html"><span>CMC</span></a>
+                                            </li>
+                                            <li>
                                                 <a href="/department.html"><span>DEPARTMENTS</span></a>
                                             </li>
                                             <li>
@@ -68,9 +83,7 @@
                                             <li>
                                                 <a href="/location.html"><span>LOCATIONS</span></a>
                                             </li>
-                                            <li>
-                                                <a href="/CMC.html"><span>CMC</span></a>
-                                            </li>
+                                            
                                             <li>
                                                 <a href="/contact.html"><span>CONTACT</span></a>
                                             </li>
@@ -197,13 +210,13 @@
                                                             <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
                                                         </div>
                                                         <div class="column one">
-                                                            <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" />
+                                                            <input placeholder="Subject" type="text" name="subject" id="subject"  size="40" aria-invalid="false" />
                                                         </div>
                                                         <div class="column one">
                                                             <textarea placeholder="Message" name="body" id="body" style="width:100%;" rows="10" aria-invalid="false"></textarea>
                                                         </div>
                                                         <div class="column one">
-                                                            <input type="button" value="Send A Message" id="submit" onClick="return check_values();">
+                                                            <input type="button" value="Send A Message" id="submit" onClick="SendMail()">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -276,9 +289,13 @@
                     <div class="column one">
                         <a id="back_to_top" class="button button_js" href><i class="icon-up-open-big"></i></a>
                         <div class="copyright">
-                            &copy; 2023 - HTML by <a target="_blank" rel="nofollow" href="https://www.facebook.com/profile.php?id=100092459050529&mibextid=LQQJ4d">Element Hive</a>
+                            &copy; 2023 - CMC Fire Service Department - HTML by <a target="_blank" rel="nofollow" href="https://www.facebook.com/profile.php?id=100092459050529&mibextid=LQQJ4d">Element Hive</a>
                         </div>
-                       
+                        <ul class="social">
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/colombofirebrigade?mibextid=ZbWKwL" title="Facebook"><i class="icon-facebook"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
